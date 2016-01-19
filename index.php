@@ -1,3 +1,8 @@
+<?php
+
+include ('class/base.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -23,12 +28,16 @@
 
 		<!--FontAwesome -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link href="fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-		
+
 	</head>
 	<!-- HEAD BEIGAS -->
 
 	<body>
+	<?php
+	$template = new templateClass();
+	$template->getMenu();
+
+	?>
 		<!-- BODY SĀKUMS -->
 		<nav class="navbar navbar-inverse" role="navigation">
 			<div class="container-fluid">
@@ -40,7 +49,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html"><i class="fa fa-home"></i></a>
+					<a class="navbar-brand" href="index.php"><i class="fa fa-home"></i></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 
@@ -54,15 +63,15 @@
 							<ul class="dropdown-menu">
 								<li role="separator" class="divider"></li>
 								<li>
-									<a href="rock.html"><i class="fa fa-hand-rock-o"></i> Rock</a>
+									<a href="rock.php"><i class="fa fa-hand-rock-o"></i> Rock</a>
 								</li>
 								<li role="separator" class="divider"></li>
 								<li>
-									<a href="metal.html"><i class="fa fa-star-o"></i> Power Metal</a>
+									<a href="metal.php"><i class="fa fa-star-o"></i> Power Metal</a>
 								</li>
 								<li role="separator" class="divider"></li>
 								<li>
-									<a href="numetal.html"><i class="fa fa-star"></i> Nu Metal</a>
+									<a href="numetal.php"><i class="fa fa-star"></i> Nu Metal</a>
 								</li>
 								<li role="separator" class="divider"></li>
 							</ul>
@@ -70,10 +79,10 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="register.html"><i class="fa fa-users"></i> Reģistrēties</a>
+							<a href="register.php"><i class="fa fa-users"></i> Reģistrēties</a>
 						</li>
 						<li>
-							<a href="login.html"><i class="fa fa-user-secret"></i> Ielogoties</a>
+							<a href="login.php"><i class="fa fa-user-secret"></i> Ielogoties</a>
 						</li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
@@ -82,55 +91,59 @@
 
 		<div class="container">
 			<div class="blog-header">
-				<h1 class="blog-title">Galerija</h1>
+				<h1 class="blog-title">Roks, Power metāls un Nu metāls</h1>
 				<p class="lead blog-description">
-					Metāls
+					Blogs, mācību procesa rezultātā.
 				</p>
 			</div>
 			<div class="row">
 				<div class="col-sm-12 blog-main">
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/aero.jpg">
-		                    <img class="img-responsive th" src="images/aero.jpg" alt="bilde">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/tw.jpg">
-		                    <img class="img-responsive th" src="images/tw.jpg" alt="bilde">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/trs.jpg">
-		                    <img class="img-responsive th" src="images/trs.jpg" alt="bilde">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/q.jpg">
-		                    <img class="img-responsive th" src="images/q.jpg" alt="bilde">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/pink.jpg">
-		                    <img class="img-responsive th" src="images/pink.jpg" alt="bilde">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/nirvana.jpg">
-		                    <img class="img-responsive th" src="images/nirvana.jpg" alt="bilde">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/led2.jpg">
-		                    <img class="img-responsive th" src="images/led2.jpg" alt="bilde">
-		                </a>
-		            </div>
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/beatles.jpg">
-		                    <img class="img-responsive th" src="images/beatles.jpg" alt="bilde">
-		                </a>
-		            </div>
-					
-				</div><!-- /.row -->
+
+					<!-- start blog-post -->
+					<div class="blog-post">
+						<h2 class="blog-post-title">Kaut kas par roku.</h2>
+						<p class="blog-post-meta">
+							14 Decembris, 2015 <a href="#">Admin</a>
+						</p>
+						<p><img src="images/led.jpg" style="max-width:100%;
+							max-height:100%;;">
+						</p>
+						<p>
+							<b><span style="font-family: Comic Sans MS;">Rokmūzika (angļu: rock music) ir daudzos novirzienos sazarojies mūsdienu mūzikas žanrs. Skaņdarbi ir vokāli instrumentāli un instrumentāli, raksturīgs akcentēts ritms, dinamiskums. Pamatā izmantotas elektriskās ģitāras (basģitāras, elektriskās ģitāras), sitaminstrumenti (bungas) un elektroniskie mūzikas instrumenti (sintezators).</span></b>
+						</p>
+						<hr>
+
+						<!-- start blog-post -->
+						<div class="blog-post">
+							<h2 class="blog-post-title">Kaut kas par Power metālu</h2>
+							<p class="blog-post-meta">
+								14 Decembris, 2015 <a href="#">Admin</a>
+							</p>
+
+							<p><img src="images/Hammer.jpg" style="max-width:100%;
+								max-height:100%;">.
+							</p>
+							<p>
+								<b><span style="font-family: Comic Sans MS;">Power metal (burtiski tulkojot - Spēka metāls) ir smagā metāla mūzikas žanrs, kas attīstījās no trešmetāla, speed metal, smagā pankroka un NWOBHM. Tas sāka veidoties 20.gs. 80.gadu vidū. Pirmā Power metal grupa bija Manowar ar savu albumu Power Metal Par komerciāli veiksmīgu šis žanrs kļuva 2000. gados ar tādām grupām kā DragonForce, Nightwish, Manowar un Theocracy priekšgalā. Šajā žanrā bieži vien dominē skaļas,izteiksmīgas un ātras/ļoti ātras ģitāru un bungu partijas, tenoru/kontr-tenoru balsis (Tenors). Ļoti bieži šim stilam neatņemama sastāvdaļa ir arī ļoti spoži,izteiksmīgi, ātri un ar vibrato pārpildīti ģitāru solo. Lēni tempi šajā stilā ir ļoti reti. Tāpat ievērojami retāk sastopami ir basu un baritonu vokāli, kā arī growling paņēmieni ar balsi. Liriskās tēmas šajā stila ietver: burvestības, tumšos spēkus, gaišos spēkus, cerību, cīņas, bruņniecību, drosmi, mīlestību, reliģiju(visāda veida), pūķus, eņģeļus utt. </span></b>
+							</p>
+						</div><!-- end blog-post -->
+						<hr>
+
+						<!-- start blog-post -->
+						<div class="blog-post">
+							<h2 class="blog-post-title">Kaut kas par  Nu metālu</h2>
+							<p class="blog-post-meta">
+								14 Decembris, 2015 <a href="#">Admin</a>
+							</p>
+
+							<p><img src="images/disturbed.jpg" style="max-width:100%;
+								max-height:100%;">.
+							</p>
+							<p>
+								<b><span style="font-family: Comic Sans MS;">Ņūmetāls (angļu: nu metal) ir smagā metāla apakšžanrs, kas radies sajaucoties smagajam metālam ar hiphopu, fankmūziku un grandžu. Jēdziens nu metal pirmo reizi tika lietots 1995. gadā, Spin Coal Chamber koncerta apskatā. Daudzas ņūmetāla grupas nāca no Kalifornijas (kā Korn, Deftones un P.O.D.). </span></b>
+
+						</div><!-- /.blog-main -->
+					</div><!-- /.row -->
 				</div><!-- /.container -->
 			</div>
 		</div>
@@ -146,19 +159,5 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
 		integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
 		crossorigin="anonymous"></script>
-
-		<script language="javascript" type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
-		<script>
-			$(function() {
-				$(".fancybox").fancybox({
-					helpers: {
-						overlay: {
-							locked: false
-						}
-					}
-				});
-			});			
-		</script>
-
 	</body>
 </html>

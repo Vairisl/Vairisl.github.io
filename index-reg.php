@@ -23,8 +23,7 @@
 
 		<!--FontAwesome -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link href="fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-		
+
 	</head>
 	<!-- HEAD BEIGAS -->
 
@@ -40,7 +39,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html"><i class="fa fa-home"></i></a>
+					<a class="navbar-brand" href="index.php"><i class="fa fa-home"></i></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 
@@ -54,15 +53,15 @@
 							<ul class="dropdown-menu">
 								<li role="separator" class="divider"></li>
 								<li>
-									<a href="rock.html"><i class="fa fa-hand-rock-o"></i> Rock</a>
+									<a href="rock.php"><i class="fa fa-hand-rock-o"></i> Rock</a>
 								</li>
 								<li role="separator" class="divider"></li>
 								<li>
-									<a href="metal.html"><i class="fa fa-star-o"></i> Power Metal</a>
+									<a href="metal.php"><i class="fa fa-star-o"></i> Power Metal</a>
 								</li>
 								<li role="separator" class="divider"></li>
 								<li>
-									<a href="numetal.html"><i class="fa fa-star"></i> Nu Metal</a>
+									<a href="numetal.php"><i class="fa fa-star"></i> Nu Metal</a>
 								</li>
 								<li role="separator" class="divider"></li>
 							</ul>
@@ -70,10 +69,10 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="register.html"><i class="fa fa-users"></i> Reģistrēties</a>
+							<a href="register.php"><i class="fa fa-users"></i> Reģistrēties</a>
 						</li>
 						<li>
-							<a href="login.html"><i class="fa fa-user-secret"></i> Ielogoties</a>
+							<a href="login.php"><i class="fa fa-user-secret"></i> Ielogoties</a>
 						</li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
@@ -81,52 +80,68 @@
 		</nav>
 
 		<div class="container">
-			<div class="blog-header">
-				<h1 class="blog-title">Galerija</h1>
-				<p class="lead blog-description">
-					Metāls
-				</p>
-			</div>
 			<div class="row">
 				<div class="col-sm-12 blog-main">
-					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/3146.jpg">
-		                    <img class="img-responsive th" src="images/3146.jpg" alt="bilde">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/a2.jpg">
-		                    <img class="img-responsive th" src="images/a2.jpg" alt="bilde">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/lal.jpg">
-		                    <img class="img-responsive th" src="images/lal.jpg" alt="bilde">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/mow.jpg">
-		                    <img class="img-responsive th" src="images/mow.jpg" alt="bilde">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/rof.jpg">
-		                    <img class="img-responsive th" src="images/rof.jpg" alt="bilde">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/images.jpg">
-		                    <img class="img-responsive th" src="images/slip.jpg" alt="bilde">
-		                </a>
-		            </div>
-		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-		                <a class="thumbnail fancybox" rel="gallery" href="images/sonata.jpg">
-		                    <img class="img-responsive th" src="images/sonata.jpg" alt="bilde">
-		                </a>
-		            </div>
+					<div class="container">
+						<h1>Sveicināti!</h1>
+						<hr>
+						<div class="row">
+							<!-- left column -->
+							<div class="col-md-3">
+								<div class="text-center">
+									<img src="images/index.jpg" class="avatar img-circle" alt="avatar">
+								</div>
+							</div>
+							<!-- edit form column -->
+							<div class="col-md-9 personal-info">
+								<h3>Uzstādījumi</h3>
+
+								<form class="form-horizontal" role="form">
+									<div class="form-group">
+										<label class="col-lg-3 control-label">Vārds/Uzvārds:</label>
+										<div class="col-lg-8">
+											<input class="form-control" value="Vārds/Uzvārds" type="text">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-lg-3 control-label">E-pasts:</label>
+										<div class="col-lg-8">
+											<input class="form-control" value="example@inbox.com" type="text">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-lg-3 control-label">Adrese:</label>
+										<div class="col-lg-8">
+											<input class="form-control" value="Adrese" type="text">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Jaunā parole:</label>
+										<div class="col-md-8">
+											<input class="form-control" value="" type="password">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Atkārtot paroli:</label>
+										<div class="col-md-8">
+											<input class="form-control" value="" type="password">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label"></label>
+										<div class="col-md-8">
+											<input class="btn" value="Save Changes" type="button">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<hr>
+
 				</div><!-- /.row -->
-				</div><!-- /.container -->
-			</div>
+			</div><!-- /.container -->
+		</div>
 		</div>
 		<!--JQUERY -->
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -140,19 +155,5 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
 		integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
 		crossorigin="anonymous"></script>
-
-		<script language="javascript" type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
-		<script>
-			$(function() {
-				$(".fancybox").fancybox({
-					helpers: {
-						overlay: {
-							locked: false
-						}
-					}
-				});
-			});			
-		</script>
-
 	</body>
 </html>

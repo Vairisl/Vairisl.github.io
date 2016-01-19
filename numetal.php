@@ -40,7 +40,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html"><i class="fa fa-home"></i></a>
+					<a class="navbar-brand" href="index.php"><i class="fa fa-home"></i></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 
@@ -54,15 +54,15 @@
 							<ul class="dropdown-menu">
 								<li role="separator" class="divider"></li>
 								<li>
-									<a href="rock.html"><i class="fa fa-hand-rock-o"></i> Rock</a>
+									<a href="rock.php"><i class="fa fa-hand-rock-o"></i> Rock</a>
 								</li>
 								<li role="separator" class="divider"></li>
 								<li>
-									<a href="metal.html"><i class="fa fa-star-o"></i> Power Metal</a>
+									<a href="metal.php"><i class="fa fa-star-o"></i> Power Metal</a>
 								</li>
 								<li role="separator" class="divider"></li>
 								<li>
-									<a href="numetal.html"><i class="fa fa-star"></i> Nu Metal</a>
+									<a href="numetal.php"><i class="fa fa-star"></i> Nu Metal</a>
 								</li>
 								<li role="separator" class="divider"></li>
 							</ul>
@@ -70,10 +70,10 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="register.html"><i class="fa fa-users"></i> Reģistrēties</a>
+							<a href="register.php"><i class="fa fa-users"></i> Reģistrēties</a>
 						</li>
 						<li>
-							<a href="login.html"><i class="fa fa-user-secret"></i> Ielogoties</a>
+							<a href="login.php"><i class="fa fa-user-secret"></i> Ielogoties</a>
 						</li>
 					</ul>
 				</div><!-- /.navbar-collapse -->

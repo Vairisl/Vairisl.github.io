@@ -39,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i></a>
+          <a class="navbar-brand" href="index.php"><i class="fa fa-home"></i></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
 
@@ -53,15 +53,15 @@
               <ul class="dropdown-menu">
                 <li role="separator" class="divider"></li>
                 <li>
-                  <a href="rock.html"><i class="fa fa-hand-rock-o"></i> Rock</a>
+                  <a href="rock.php"><i class="fa fa-hand-rock-o"></i> Rock</a>
                 </li>
                 <li role="separator" class="divider"></li>
                 <li>
-                  <a href="metal.html"><i class="fa fa-star-o"></i> Power Metal</a>
+                  <a href="metal.php"><i class="fa fa-star-o"></i> Power Metal</a>
                 </li>
                 <li role="separator" class="divider"></li>
                 <li>
-                  <a href="numetal.html"><i class="fa fa-star"></i> Nu Metal</a>
+                  <a href="numetal.php"><i class="fa fa-star"></i> Nu Metal</a>
                 </li>
                 <li role="separator" class="divider"></li>
               </ul>
@@ -69,10 +69,10 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="register.html"><i class="fa fa-users"></i> Reģistrēties</a>
+              <a href="register.php"><i class="fa fa-users"></i> Reģistrēties</a>
             </li>
             <li>
-              <a href="login.html"><i class="fa fa-user-secret"></i> Ielogoties</a>
+              <a href="login.php"><i class="fa fa-user-secret"></i> Ielogoties</a>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -81,26 +81,46 @@
 
     <div class="container">
       <div class="blog-header">
-        <h1 class="blog-title">Autorizācija</h1>
+        <h1 class="blog-title">Reģistrēties</h1>
+        <p class="lead blog-description">
+          Aizpildiet ievadlaukus
+        </p>
       </div>
       <div class="row">
         <div class="col-sm-12 blog-main">
           <form role="form">
             <div class="form-group">
+              <label for="email">Vārds/Uzvārds</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
               <label for="email">E-pasts</label>
               <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="email">Adrese</label>
+              <input type="text" class="form-control" id="adress">
             </div>
             <div class="form-group">
               <label for="pwd">Parole:</label>
               <input type="password" class="form-control" id="pwd">
             </div>
+            <div class="form-group">
+              <label for="pwd">Atkārot paroli:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox">
+                Piekrītu lietošanas noteikumiem</label>
+            </div>
             <button type="button" id="csgo" class="btn btn-default">
-              Autorizēties
+              Reģistrēties
             </button>
           </form>
         </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div>
+      </div><!-- /.container -->
+    </div>
     </div>
     <!--JQUERY -->
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -115,10 +135,11 @@
     integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
 
-<script type="text/javascript">
+
+    <script type="text/javascript">
     $(function() {
       $( "#csgo" ).click(function() {
-        window.location.href="./index-reg.html";
+        window.location.href="login.php";
       });
     });
 </script>

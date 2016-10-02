@@ -1,0 +1,106 @@
+/*Navigācijas Paneļa dizains*/
+body {
+    padding-top: 70px; /*Vajadzīgs priekš fiksētā navigācijas paneļa*/
+    background: #000 url(../img/back.jpg);
+    -webkit-animation: backgroundScroll 20s linear infinite;
+    animation: backgroundScroll 20s linear infinite;
+
+@keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -400px 0;}
+}
+}
+.navbar-toggle {
+    text-align:center;
+}
+.navbar-nav{
+ text-align:center;
+}
+
+/*Karuseļa uzstādījumi*/
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+/*Preces informatīvais dizains*/
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+/*Footeris*/
+footer {
+    margin: 50px 0;
+}
+
+/*Font awesome Fontu dizains*/
+.fa-sign-in {
+    padding-right: 5px;
+}
+.fa-users {
+    padding-right: 5px;
+}
+.fa-shopping-cart {
+    font-size: 19px;
+    margin-left: -4px;
+}
+/*Saites komponentu dizains*/
+a {
+    font-size:17px;
+}
+
+.lead {
+    text-transform: uppercase;
+    color: #9d9d9d;
+    text-align: center;
+    font-family: myfont;
+}
+
+@font-face{
+    font-family: "myfont";
+    src: url('../fonts/myfont.ttf'),
+    url('../fonts/myfont.ttf'); /* IE */
+}
+
+.list-group-item {
+    font-weight: bold;
+    background-color: #C0C0C0;
+}
+
+.boxed {
+    text-align: center;
+    font-family: myfont;
+    color: black;
+}
